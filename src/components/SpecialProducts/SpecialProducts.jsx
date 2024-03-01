@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import { SlRefresh } from "react-icons/sl";
 import { CiHeart } from "react-icons/ci";
 import { BsCart3 } from "react-icons/bs";
@@ -7,8 +7,16 @@ import { RiStarSFill } from "react-icons/ri";
 import img1 from "../../images/best1.png"
 import img2 from "../../images/best2.png"
 import img3 from "../../images/best3.png";
-import img4 from "../../images/best4.png"
+import img4 from "../../images/best4.png";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 export default function SpecialProducts() {
+  useEffect(() => {
+    
+    AOS.init({
+      duration:2000
+    })
+  }, [])
     let products = [
         {
           id:1,
@@ -48,7 +56,7 @@ export default function SpecialProducts() {
         </div>
         <div className="row mt-5">
             {products.map((pro)=>
-            <div key={pro.id} className="col-md-3 col-sm-6 mb-3">
+            <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" key={pro.id} className="col-md-3 col-sm-6 mb-3">
             <div className="main-cart">
             <div className='image' >
             <img src={pro.img} className="h-100 w-100" alt="..." />

@@ -1,11 +1,19 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import Slider from "react-slick";
 import { FaRegUser } from "react-icons/fa6";
 import { FaRegMessage } from "react-icons/fa6";
 import img1 from "../../images/article1.jpg"
 import img2 from "../../images/article2.jpg"
 import img3 from "../../images/article3.jpg"
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 export default function Articles() {
+  useEffect(() => {
+    AOS.init({
+      duration:2000
+    })
+  }, [])
+  
     function SampleNextArrow(props) {
         const {onClick } = props;
         return (
@@ -97,7 +105,7 @@ export default function Articles() {
       <div className="container main-slider mb-5">
      <Slider {...settings}>
       {articles.map((article)=>
-        <div key={article.id} className='articles p-2'>
+        <div data-aos="zoom-in-down" key={article.id} className='articles p-2'>
         <img src={article.img} className="card-img-top" alt="..."/>
         <div className="card-body p-3 border-2 rounded-0 card position-relative">
             <div className='date position-absolute'>

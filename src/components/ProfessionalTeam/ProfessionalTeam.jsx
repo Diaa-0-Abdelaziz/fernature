@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import { SlRefresh } from "react-icons/sl";
 import { CiHeart } from "react-icons/ci";
 import { BsCart3 } from "react-icons/bs";
@@ -12,7 +12,16 @@ import img5 from "../../images/best5.png"
 import img6 from "../../images/best6.png"
 import img7 from "../../images/best7.png"
 import img8 from "../../images/best8.png"
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 export default function ProfessionalTeam() {
+  useEffect(() => {
+    
+    AOS.init({
+      duration:2000
+    })
+  }, [])
+  
     let products = [
         {
           id:1,
@@ -83,7 +92,7 @@ export default function ProfessionalTeam() {
         </div>
         <div className="row">
             {products.map((pro)=>
-            <div key={pro.id} className="col-md-3 col-sm-6 mb-3">
+            <div key={pro.id} className="col-md-3 col-sm-6 mb-3" data-aos="fade-in">
             <div className="main-cart">
             <div className='image' >
             <img src={pro.img} className="h-100 w-100" alt="..." />

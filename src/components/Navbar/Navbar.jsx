@@ -1,4 +1,4 @@
-import React,{useState, useEffect} from 'react'
+import React,{useState} from 'react'
 import { CgMenuGridR } from "react-icons/cg";
 import'./Navbar.css'
 import logo from '../../images/Group 2.svg'
@@ -19,7 +19,6 @@ export default function Navbar() {
   return (
    <>
    <div className="navbar fixed-top py-1 px-5">
-   {/* <div className=' w-100 py-1 px-5  d-flex '> */}
    <div className='icon'>
      <img src={logo} alt="" />
    </div>
@@ -42,8 +41,6 @@ export default function Navbar() {
    </div>
    </div>
    </div>
-   {/* </div> */}
-  
    </>
   )
 }

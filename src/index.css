@@ -64,7 +64,11 @@
   cursor: pointer;
 }
 /* ***main*** */
-
+main{
+  background-image: url(./images/header.jpg);
+     background-size: cover;
+     height: 100vh;
+ }
 main .content
 {
   max-width: 450px;
