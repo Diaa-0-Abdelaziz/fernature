@@ -5,8 +5,7 @@ export default function Main() {
     <>
      <main className=''>
     <div className='container row h-100'>
-      <div className="col-6 d-flex flex-column align-items-center justify-content-center">
-     
+      <div className="col-md-6 d-flex p-5 flex-column align-items-center justify-content-center">
       <div className='content'>
       <p className=' text-uppercase'>interior</p>
       <h1 className=' text-capitalize'>home deasigns made easy</h1>

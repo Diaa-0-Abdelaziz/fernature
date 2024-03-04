@@ -7,9 +7,9 @@ import { FaLinkedin } from "react-icons/fa";
 export default function Footer() {
   return (
     <>
-    <div className=' footer d-flex justify-content-between container p-2'>
-        <p>Copyright 2022 - Designed & Developed by Frenify</p>
-        <ul className=' d-flex list-unstyled'>
+    <div className=' footer d-flex flex-wrap justify-content-between container p-2'>
+        <p className=' m-auto'>Copyright 2022 - Designed & Developed by Frenify</p>
+        <ul className=' d-flex list-unstyled m-auto'>
             <li><FaFacebook/></li>
             <li><AiFillInstagram/></li>
             <li><FaTwitter/></li>

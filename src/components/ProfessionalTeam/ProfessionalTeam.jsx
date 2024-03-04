@@ -83,7 +83,7 @@ export default function ProfessionalTeam() {
         <p>professional team</p>
         <div className='d-flex flex-wrap justify-content-between align-items-center'>
         <h3 className=' text-capitalize'>the best new arrivals</h3>
-        <ul className=' list-unstyled d-flex justify-content-between rooms'>
+        <ul className=' list-unstyled d-flex flex-wrap justify-content-between rooms'>
             <li className='active'>desk</li>
             <li>bedroom</li>
             <li>lighting</li>

@@ -3,7 +3,7 @@ import img1 from "../../images/logo.svg"
 export default function Subscripe() {
   return (
     <>
-    <section className='subscripe d-flex flex-column align-items-center'>
+    <section className=' container subscripe d-flex flex-column align-items-center'>
      <img src={img1} alt="" />
      <h4>Join Now For Early Access</h4>
      <p>Suspendisse eu velit est. Cras nec vestibulum quam. Donec tincidunt purus nec enim tincidunt, sit</p>
