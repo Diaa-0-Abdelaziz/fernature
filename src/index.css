@@ -288,6 +288,14 @@ article
   background-color: var(--third-color);
   display: flow-root;
   padding: 0 5px;
+  bottom: 0;
+  transition: .5s;
+  position: relative;
+}
+article:hover
+{
+ bottom: 70px;
+ transition: .5s;
 }
 .clients .image 
 {
